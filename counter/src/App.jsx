@@ -6,6 +6,11 @@ function App() {
   const addValue = () => {
     console.log("clicked", count);
     setCount(count + 1);
+        setCount(count + 1);
+    setCount(count + 1);
+    setCount(count + 1);
+    setCount(count + 1);
+
   };
 
   const removeValue = () => {
