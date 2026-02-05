@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            border-color: #818cf8;
+        }
+
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #38bdf8;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-bold gradient-text">CREATIVE.PRO</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#portfolio" class="nav-link">Work</a>
+                    <a href="#contact" class="nav-link px-4 py-2 bg-indigo-600 rounded-lg hover:bg-indigo-700">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+                Main Hoon Ek <span class="gradient-text">Creative Visionary</span>
+            </h1>
+            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                Graphic Design, Video Editing aur Content Writing ka perfect mix. AI ke saath main digital content ko naye level par le jata hoon.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#portfolio" class="px-8 py-3 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-200 transition">Mera Kaam Dekhein</a>
+                <a href="#contact" class="px-8 py-3 border border-slate-700 rounded-full hover:bg-slate-800 transition">Baat Karein</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Meri Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Graphic Design -->
+                <div class="skill-card p-8 bg-slate-800 border border-slate-700 rounded-2xl">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-blue-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Graphic Design</h3>
+                    <p class="text-slate-400 text-sm">Logos, branding aur social media posters jo logon ka dhyan kheenche.</p>
+                </div>
+
+                <!-- Video Editing -->
+                <div class="skill-card p-8 bg-slate-800 border border-slate-700 rounded-2xl">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-video text-purple-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Video Editing</h3>
+                    <p class="text-slate-400 text-sm">Cinematic storytelling aur engaging reels jo viral hone ke liye bani hain.</p>
+                </div>
+
+                <!-- Content Writing -->
+                <div class="skill-card p-8 bg-slate-800 border border-slate-700 rounded-2xl">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-pen-nib text-green-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Content Writing</h3>
+                    <p class="text-slate-400 text-sm">Impactful scripts aur blogs jo aapke message ko sahi tarike se pahunchayein.</p>
+                </div>
+
+                <!-- AI Specialist -->
+                <div class="skill-card p-8 bg-slate-800 border border-slate-700 rounded-2xl">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-pink-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">AI Integration</h3>
+                    <p class="text-slate-400 text-sm">Midjourney aur ChatGPT jaise tools use karke workflow ko fast aur creative banana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold">Selected Works</h2>
+                    <p class="text-slate-400 mt-2">Mere kuch behtareen projects</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-video bg-slate-800">
+                    <div class="absolute inset-0 flex items-center justify-center text-slate-500 italic">
+                        [Graphic Design Showcase Image]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <h4 class="text-xl font-bold">Brand Identity Design</h4>
+                        <p class="text-sm text-slate-300">Modern Minimalist Branding Project</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-video bg-slate-800">
+                    <div class="absolute inset-0 flex items-center justify-center text-slate-500 italic">
+                        [Video Editing Portfolio Image]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <h4 class="text-xl font-bold">Commercial Video Ad</h4>
+                        <p class="text-sm text-slate-300">Fast-paced editing & Sound design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-indigo-600">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Sath Mein Kuch Amazing Banayein?</h2>
+            <p class="text-indigo-100 mb-10 text-lg">Aapke idea ko reality mein badalne ka waqt aa gaya hai.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-xl text-slate-900 max-w-lg mx-auto">
+                <form onsubmit="event.preventDefault(); alert('Shukriya! Aapka message mil gaya.');">
+                    <div class="mb-4">
+                        <input type="text" placeholder="Aapka Naam" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-6">
+                        <textarea placeholder="Aapke Project ke baare mein batayein..." rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-4 rounded-xl hover:bg-indigo-700 transition">Message Bhejein</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800 text-center text-slate-500">
+        <p>© 2024 Creative.Pro | Made with <i class="fas fa-heart text-red-500"></i> & AI</p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-behance"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
