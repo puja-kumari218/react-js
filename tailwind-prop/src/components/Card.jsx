@@ -7,7 +7,7 @@ function Card({name, btnText="Learn more"}) {
       <img
         src="https://picsum.photos/301"
         alt=""
-        className="object-cover object-center w-full rounded-t-md h-72 bg-gray-500"
+        className="object-cover object-center w-full roundāed-t-md h-72 bg-gray-500"
       />
       <div className="flex flex-col justify-between p-6 space-y-8">
         <div className="space-y-2">
