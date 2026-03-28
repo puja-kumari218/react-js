@@ -10,7 +10,8 @@ function App() {
     // console.log("value", todo)
     // console.log("date", { id: Date.now(), ...todo })
     // console.log("ctest",[{ id: Date.now(), ...todo }, ...todos])
-    setTodos((prev) => [{ id: Date.now(), todo }, ...prev]);
+    setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
+
   };
   
   const updatedTodo = (id, todo) => {

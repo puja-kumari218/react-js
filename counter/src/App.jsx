@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState();
+  const [count, setCount] = useState(0);
 
   const updateValue = (value) => {
     if (value > 0) {
